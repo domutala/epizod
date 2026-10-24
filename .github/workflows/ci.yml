@@ -47,5 +47,26 @@ jobs:
       - name: Test
         run: pnpm run test
 
+  # tsdown needs Node >= 22 to run (Promise.withResolvers), so the build is
+  # checked once on Node 22. The emitted code (es2022) still runs on Node 20.
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
       - name: Build
         run: pnpm run build
