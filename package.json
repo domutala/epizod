@@ -84,5 +84,8 @@
   "publishConfig": {
     "access": "public",
     "provenance": true
+  },
+  "dependencies": {
+    "@changesets/changelog-github": "^1.0.1"
   }
 }
