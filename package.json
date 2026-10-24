@@ -1,6 +1,6 @@
 {
   "name": "epizod",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Dynamic, portable, Zod-compatible validation schemas: convert Zod schemas to JSON definitions and rebuild them anywhere.",
   "keywords": [
     "zod",
