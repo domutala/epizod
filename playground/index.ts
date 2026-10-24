@@ -1,5 +1,5 @@
 import z from "zod";
-import { toDefinition, fromDefinition } from "./definition/index.js";
+import { toDefinition, fromDefinition } from "../src/index.js";
 
 function tolower(val: string) {
   return val.toLowerCase();

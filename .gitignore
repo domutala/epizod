@@ -9,6 +9,7 @@ dist/
 # Tests and coverage
 coverage/
 .vitest-cache/
+.vitest/
 
 # Logs
 *.log
