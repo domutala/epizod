@@ -53,6 +53,7 @@
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "pnpm run clean && pnpm run typecheck && pnpm run test && pnpm run build",
     "changeset": "changeset",
+    "changelog": "@changesets/cli/changelog",
     "version-packages": "changeset version",
     "release": "changeset publish"
   },
